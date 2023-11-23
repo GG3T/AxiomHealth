@@ -11,6 +11,10 @@ Integrantes :
 # Instruções para rodar o serviço
 *Requisitos* : DOCKER.
 
+*O Script do banco esta na pasta resources/data.sql.*
+
+*O projeto está utlizando HIBERNATE para executar automaticamente os scripts.*
+
 *Com o docker instalado.*
 
 <b>1º Clone este repositorio para a sua maquina local</b>
