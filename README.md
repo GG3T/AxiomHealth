@@ -13,7 +13,7 @@ Integrantes :
 
 *O Script do banco esta na pasta resources/data.sql.*
 
-*O projeto está utlizando HIBERNATE para executar automaticamente os scripts.*
+*O projeto está utlizando HIBERNATE para executar automaticamente o script de create e insert.*
 
 *Com o docker instalado.*
 
