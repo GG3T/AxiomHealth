@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:8.0.31
+    volumes:
+      - dbbase:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: bp1234
+      MYSQL_DATABASE: cliente_db
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8000:80
+    depends_on:
+      - db
+
+  app:
+    image: gg3t/axiomhealthcliente:1.1
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=jdbc:mysql://db:3306/cliente_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      - MYSQL_ROOT_PASSWORD=bp1234
+
+volumes:
+  dbbase:
