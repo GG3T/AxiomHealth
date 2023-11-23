@@ -2,17 +2,23 @@
 
 Integrantes :
 
-Gilberto Moreira : 88682
 
-Marcio Yukio : 86662
+*Gilberto Moreira : 88682*
 
-Felipe Nunes : 88254
+*Marcio Yukio : 86662*
+
+*Felipe Nunes : 88254*
 
 *O drigrama está na pasta raiz do projeto* 
 *Print de Funcionamento dos endpoints está na pasta raiz do projeto*
 
+
 # Instruções para rodar o serviço
 *Requisitos* : DOCKER.
+
+*O Script do banco esta na pasta resources/data.sql.*
+
+*O projeto está utlizando HIBERNATE para executar automaticamente o script de create e insert.*
 
 *Com o docker instalado.*
 
